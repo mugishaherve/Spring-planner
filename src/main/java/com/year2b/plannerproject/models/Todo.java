@@ -14,6 +14,10 @@ public class Todo {
     private String title;
 
     private boolean completed;
+    @ManyToOne(fetch = FetchType.LAZY)
+    User user;
+
+
 
     public String getTitle() {
         return title;
